@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import Navbar from './components/Navbar';
+
 
 export default function Home() {
   return (
@@ -1194,7 +1196,7 @@ function LiquidEther({
       className={`w-full  h-screen relative overflow-hidden pointer-events-none touch-none ${className || ''}`}
       style={style}
     >
-      
+     <Navbar/>
     </div>
     
   );
