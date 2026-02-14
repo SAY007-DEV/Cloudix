@@ -1193,6 +1193,9 @@ function LiquidEther({
       ref={mountRef}
       className={`w-full  h-screen relative overflow-hidden pointer-events-none touch-none ${className || ''}`}
       style={style}
-    />
+    >
+      
+    </div>
+    
   );
 }
