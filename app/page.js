@@ -52,7 +52,7 @@ export default function Home() {
 
       {/* Content Layer */}
       <div className="absolute inset-0 z-10 flex flex-col">
-        {/* <Navbar /> */}
+        <Navbar />
 
         {/* Hero Section */}
         <section className="flex flex-1 flex-col justify-center items-center text-center px-6">

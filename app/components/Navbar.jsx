@@ -36,10 +36,10 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/docs"
+            href="/home"
             className="hover:text-white transition-colors duration-300"
           >
-            Docs
+            home2
           </Link>
         </div>
       </nav>
