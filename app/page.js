@@ -5,9 +5,33 @@ import * as THREE from 'three';
 import Navbar from './components/Navbar';
 
 
+// export default function Home() {
+//   return (
+//     <div style={{ width: '100%', height: 600, position: 'relative' }}>
+//       <LiquidEther
+//         colors={['#5227FF', '#FF9FFC', '#B19EEF']}
+//         mouseForce={20}
+//         cursorSize={100}
+//         isViscous
+//         viscous={30}
+//         iterationsViscous={32}
+//         iterationsPoisson={32}
+//         resolution={0.5}
+//         isBounce={false}
+//         autoDemo
+//         autoSpeed={0.5}
+//         autoIntensity={2.2}
+//         takeoverDuration={0.25}
+//         autoResumeDelay={3000}
+//         autoRampDuration={0.6}
+//       />
+//     </div>
+//   );
+// }
+
 export default function Home() {
   return (
-    <div style={{ width: '100%', height: 600, position: 'relative' }}>
+    <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
       <LiquidEther
         colors={['#5227FF', '#FF9FFC', '#B19EEF']}
         mouseForce={20}
@@ -25,9 +49,69 @@ export default function Home() {
         autoResumeDelay={3000}
         autoRampDuration={0.6}
       />
+
+      {/* Content Layer */}
+      <div className="absolute inset-0 z-10 flex flex-col">
+        {/* <Navbar /> */}
+
+        {/* Hero Section */}
+        <section className="flex flex-1 flex-col justify-center items-center text-center px-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-white">
+            Welcome to Your Brand
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-lg md:text-xl text-white/80">
+            Build something powerful. Beautiful. Immersive.
+            Experience fluid motion and interactive design
+            powered by WebGL.
+          </p>
+
+          <div className="mt-10 flex gap-6">
+            <button className="px-8 py-3 bg-white text-black rounded-full font-semibold hover:opacity-90 transition">
+              Get Started
+            </button>
+
+            <button className="px-8 py-3 border border-white text-white rounded-full font-semibold hover:bg-white hover:text-black transition">
+              Learn More
+            </button>
+          </div>
+        </section>
+
+        {/* Additional Sections */}
+        <section className="py-24 px-6 bg-transparent">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-white">
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Fast</h3>
+              <p className="text-white/70">
+                High-performance fluid rendering optimized for smooth interaction.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Modern</h3>
+              <p className="text-white/70">
+                Clean, minimal UI layered seamlessly over dynamic WebGL visuals.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Interactive</h3>
+              <p className="text-white/70">
+                Mouse-driven physics simulation with automatic motion fallback.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="py-10 text-center text-white/60 text-sm">
+          © {new Date().getFullYear()} Your Company. All rights reserved.
+        </footer>
+      </div>
     </div>
   );
 }
+
 
 function LiquidEther({
   mouseForce = 20,
@@ -1196,7 +1280,7 @@ function LiquidEther({
       className={`w-full  h-screen relative overflow-hidden pointer-events-none touch-none ${className || ''}`}
       style={style}
     >
-     <Navbar/>
+     {/* <Navbar/> */}
     </div>
     
   );
