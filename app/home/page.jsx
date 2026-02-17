@@ -551,7 +551,7 @@ class Y extends c {
 }
 
 const X = {
-  count: 200,
+  count: 50,
   colors: [0, 0, 0],
   ambientColor: 16777215,
   ambientIntensity: 1,
